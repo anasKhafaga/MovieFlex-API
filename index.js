@@ -14,8 +14,7 @@ const server = http.createServer(app);
  * @param {Callback} listener
  */
 server.listen({
-  port: process.env.PORT,
-  host: '192.168.1.7'
+  port: process.env.PORT
 }, () => {
   console.log(`Server is listening now on port ${process.env.PORT}`);
 });
