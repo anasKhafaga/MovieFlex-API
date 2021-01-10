@@ -1,6 +1,3 @@
 node_modules/
 logs/
-.env
-private.key
 out/
-jsdoc.json
