@@ -19,6 +19,8 @@ This API serves more than 25,000 movies stored in a database with comments and m
 - Authentication and Authorization
 - Sending Emails
 - Logging System [Morgan / Winston Logger]
+- Documentation
+- Git
 
 ## Routes
 
