@@ -1,6 +1,48 @@
-# What is Lorem Ipsum?
-## Lorem Ipsum
-### Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# MovieFlex - Backend side
 
-# Why do we use it?
-### It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+## Website link
+
+http://movieflexfront.herokuapp.com/
+
+## Description
+
+This API serves more than 25,000 movies stored in a database with comments and more.
+
+## Languages / Frameworks / Techniques
+
+- JavaScript
+- Node.JS
+- ExpressJS
+- OOP
+- MC
+- Data Validation
+- Authentication and Authorization
+- Sending Emails
+- Logging System [Morgan / Winston Logger]
+
+## Routes
+
+- Auth
+
+  - auth/login - POST
+  - auth/signup - POST > add a new user and send verification email.
+  - auth/verify - GET > handle requests by links sent with emails.
+
+- Movies
+  - /movies/browse/:page - GET > serves 20 movies per page.
+  - /movie/:id - GET > get a certain movie by id.
+  - /movies/top-rated - GET > get top 50 movies.
+  - /movies/popular - GET > get most popular 50 movies.
+  - /movies/related - GET > get 6 related movies according to genres.
+  - /movies/search/:search - GET > search for movies which matches input sent by the user.
+- Comments
+
+  - /getComments/:movieId - GET > get a certain comment by id.
+  - /createComment/:movieId - POST > create a new comment and link it with its movie.
+  - /editComment/:commentId - PUT > edit an existing comment.
+  - /deleteComment/:commentId - DELETE > delete a comment.
+
+- Watchlist
+  - /watchlist/ - GET > get watchlist related to the authorized user.
+  - /watchlist/:movieId - POST > add a movie to user the authorized user watchlist.
+  - /watchlist/:movieId - DELETE > remove a movie from watchlist.
