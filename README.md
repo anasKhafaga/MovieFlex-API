@@ -2,7 +2,7 @@
 
 ## Website link
 
-http://movieflexfront.herokuapp.com/
+https://movieflexfrontend.herokuapp.com/
 
 ## Description
 
